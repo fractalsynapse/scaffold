@@ -13,8 +13,10 @@ selecting an application architecture, language, framework, forge or branch mode
    project decisions and user work rather than overwriting an instruction file.
 3. Copy selected skill directories from [.agents/skills/](.agents/skills/) into
    the destination supported by the target's agent environment. Keep every selected
-   skill's resources and resolve its links; these skills refer to the project root's
-   AGENTS.md. Adjust those references if the destination has a different depth.
+   skill's resources and include referenced skills or reconcile their procedures/links.
+   Skills refer to the project root's AGENTS.md; the root also links back to skills.
+   Update both directions for the actual directory name and relative depth, even when
+   only the directory name changes. Check discovery using the target's agent environment.
 4. Record project facts in the project's existing canonical location. The optional
    [configuration guide](docs/project-configuration.md) identifies useful facts;
    it does not choose values or require a new configuration format.
